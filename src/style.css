@@ -1,12 +1,15 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,800&display=swap');
+
+ 
  :root {
   --color-primary: #7380ec;
   --color-danger: #ff7782;
   --color-success: #41f1b5;
-  --color-warning: #ff7782;
+  --color-warning: #ffbb55;
   --color-white: #fff;
   --color-info-dark: #7d8da1;
   --color-info-light: #fff;
-  --color-dark: #7d8da1;
+  --color-dark: #677483;
   --color-light: rgba(132,139, 200, 0.19);
   --color-primary-variant: #111e88;
   --color-dark-variant: #677483;
@@ -21,4 +24,192 @@
   --padding: 2rem;
 
   --box-shadow: 0 2rem 3rem varvar(--color-light)
+}
+
+*{
+  text-decoration: none;
+  padding: 0;
+  appearance: none;
+  border:0;
+  outline: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 13px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.87rem;
+  background: var(--color-background);
+  user-select: none;
+  overflow-x: hidden;
+}
+.contain {
+  display: grid;
+  width:96%;
+  margin:0 auto;
+  gap:1.8rem;
+  grid-template-columns: 14rem auto 23rem;
+}
+
+a {
+  color: var(--color-dark)
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+h4 {
+  font-size: 0.8rem ;
+}
+
+h5 {
+  font-size: 0.77;
+}
+small {
+  font-size: 0.77rem;
+}
+
+.profile-picture {
+  width: 2.8rem;
+  border-radius: 50%;
+  height: 2.8rem;
+  overflow: hidden;
+}
+
+.textmutted {
+  color: var(--color-info-dark)
+}
+
+p{
+  color: var(--color-dark-variant)
+}
+
+b {
+  color: var(--color-dark)
+}
+
+.primary{
+  color: var(--color-primary)
+}
+.danger{
+  color: var(--color-danger)
+}
+.success{
+  color: var(--color-success)
+}
+.warning{
+  color: var(--color-warning)
+}
+
+aside {
+  height: 100vh;
+}
+
+aside .top {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+aside .logo {
+  display: flex;
+  gap: 0.8rem;
+}
+
+aside .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+aside .logo h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+aside .close {
+  display: none;
+}
+
+aside .sidebar {
+  display: flex;
+  height: 86vh;
+  flex-direction: column;
+  position: relative;
+  top: 3rem;
+}
+
+aside h3  {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  font-weight: 500px;
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-info-dark);
+  gap: 1rem;
+  margin-left: 2rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 310ms ease-in;
+}
+
+aside .sidebar span {
+  transition: all 250ms ease-in-out;
+}
+
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+aside .sidebar a.active {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  margin-left: 0px;
+}
+
+aside .sidebar a.active:before {
+  content: '';
+  width: 6px;
+  height:100%;
+  background: var(--color-primary);
+}
+
+aside .sidebar a.active span {
+  color: var(--color-primary);
+  margin-left: calc(2rem -3px);
+}
+
+aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+
+aside .sidebar a:hover span {
+  margin-left: 1.5rem;
 }
