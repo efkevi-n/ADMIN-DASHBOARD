@@ -1,6 +1,21 @@
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,800&display=swap');
 
  
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 93%;
+      grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2 {
+      display: none;
+    }
+
+    aside .sidebar h3 {
+      display: none;
+    }
+  }
+
  :root {
   --color-primary: #7380ec;
   --color-danger: #ff7782;
@@ -180,7 +195,7 @@ aside .sidebar a {
   transition: all 310ms ease-in;
 }
 
-aside .sidebar span {
+aside .sidebar img {
   transition: all 250ms ease-in-out;
 }
 
@@ -203,7 +218,7 @@ aside .sidebar a.active:before {
   background: var(--color-primary);
 }
 
-aside .sidebar a.active span {
+aside .sidebar a.active img {
   color: var(--color-primary);
   margin-left: calc(2rem -3px);
 }
@@ -212,7 +227,7 @@ aside .sidebar a:hover {
   color: var(--color-primary);
 }
 
-aside .sidebar a:hover span {
+aside .sidebar a:hover img {
   margin-left: 1.5rem;
 }
 
@@ -406,7 +421,7 @@ main .recent-order a {
  border-radius: var(--border-radius-1);
 }
 
-.right .theme span {
+.right .theme img {
   font-size: 1.2rem;
   width: 50%;
   height: 100%;
