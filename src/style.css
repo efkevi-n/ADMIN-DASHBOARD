@@ -118,7 +118,7 @@ small {
 }
 
 p{
-  color: var(--color-dark-variant);
+  color: black;
   margin-top: 0;
 }
 
